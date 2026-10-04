@@ -1,7 +1,8 @@
-// One place for the backend URL and for fetch boilerplate.
-// Override with VITE_API_URL in a .env file when you deploy.
+// In production the site calls "/api" on its own domain (Vercel forwards it to
+// the backend), so login cookies stay first-party. Locally it calls port 5000.
 export const API_URL =
-  import.meta.env.VITE_API_URL || "http://localhost:5000/api";
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD ? "/api" : "http://localhost:5000/api");
 
 export async function api(path, { method = "GET", body } = {}) {
   const res = await fetch(`${API_URL}${path}`, {
