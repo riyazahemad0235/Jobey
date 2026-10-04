@@ -1,0 +1,21 @@
+.contentArea {
+  padding: 20px 40px;
+}
+
+.pageTitle {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.jobsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.empty {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}

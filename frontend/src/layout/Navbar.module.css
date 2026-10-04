@@ -1,0 +1,74 @@
+.mainContainer {
+  width: 100%;
+  min-width: none;
+  height: 15%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbarContainer {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #efeb10;
+}
+.firstContainer {
+  display: flex;
+  gap: 20px;
+}
+.thirdContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 50px;
+}
+.thirdContainer span {
+  font-size: 30px;
+}
+
+.jobInput {
+  width: 700px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #f1f3f6;
+  border: none;
+  border: 2px solid black;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.searchBox {
+  height: 35px;
+  width: 100px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.secondContainer {
+  display: flex;
+  padding-left: 50px;
+}
+.searchBtn {
+  width: 100px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.logoutBtn {
+  width: 100px;
+  height: 35px;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+}

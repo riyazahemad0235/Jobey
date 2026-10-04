@@ -1,0 +1,84 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px 40px 40px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 560px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.welcome h1 {
+  font-size: 32px;
+}
+
+.welcome h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
+}
+
+.userData {
+  display: flex;
+  gap: 30px;
+  margin-top: 8px;
+}
+
+.dataBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.dataBox h3 {
+  font-size: 18px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.column h2 {
+  font-size: 20px;
+}
+
+.empty {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.statusRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.statusRow select {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  background-color: #fff;
+}

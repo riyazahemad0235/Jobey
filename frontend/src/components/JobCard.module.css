@@ -1,0 +1,95 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  min-height: 230px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo,
+.fallback {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.logo {
+  object-fit: contain;
+  background-color: #f1f3f6;
+}
+
+.fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efeb10;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.position {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.details h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.details p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 14px;
+}
+
+.btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.solid {
+  background-color: #efeb10;
+  border: none;
+}
+
+.solid:hover {
+  background-color: #d8d200;
+}
+
+.outline {
+  background-color: #fff;
+  border: 1px solid #999;
+}
+
+.outline:hover {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,110 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.message {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.firstContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.firstContainer h1 {
+  font-size: 40px;
+  border-top: dashed black 5px;
+  border-bottom: dashed black 5px;
+  display: inline-block;
+}
+
+.secondContainer {
+  width: 70%;
+  min-width: 320px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.firstSec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.titleSec {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.titleSec h1 {
+  font-size: 28px;
+}
+
+.titleSec img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.buttonSec {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttonSec button {
+  height: 34px;
+  width: 170px;
+  border-radius: 5px;
+  background-color: #efeb10;
+  box-shadow: 1px 1px 1px black;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.buttonSec button:disabled {
+  background-color: #e2e2e2;
+  box-shadow: none;
+  cursor: default;
+}
+
+.description {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  border-top: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.box h3 {
+  padding-top: 10px;
+}
+
+.list {
+  padding-left: 22px;
+  margin-top: 6px;
+  line-height: 1.7;
+}

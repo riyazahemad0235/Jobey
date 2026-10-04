@@ -1,0 +1,193 @@
+.mainContainer {
+  min-height: 100vh;
+  background-color: #efeb10;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstContainer {
+  width: 100%;
+}
+
+.firstSec {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 24px 50px;
+}
+
+.titleSec {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.titleSec h1 {
+  font-size: 32px;
+}
+
+.firstSec > h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ---------- main area ---------- */
+.secondContainer {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 20px 50px 60px;
+}
+
+/* left side: picture + tagline */
+.secondSec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  max-width: 520px;
+  text-align: center;
+}
+
+.logoImg {
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.textArea h1 {
+  font-size: 34px;
+  line-height: 1.15;
+}
+
+.textArea h2 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* right side: the form card */
+.thirdSec {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 460px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+}
+
+.textSec h1 {
+  font-size: 30px;
+}
+
+.textSec h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  margin-top: 4px;
+}
+
+.inputSec {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.inputBox h3 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.inputSec input {
+  height: 44px;
+  width: 100%;
+  padding: 0 12px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  font-size: 15px;
+}
+
+.inputSec input:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: 0 0 0 3px rgba(239, 235, 16, 0.7);
+}
+
+.signBtn button {
+  margin-top: 28px;
+  height: 44px;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  background-color: #efeb10;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.signBtn button:hover {
+  background-color: #d8d200;
+}
+
+.signBtn button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.footerSec {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+#footer {
+  display: flex;
+  gap: 8px;
+  font-size: 14px;
+}
+@media (max-width: 900px) {
+  .firstSec {
+    padding: 16px 24px;
+    gap: 20px;
+  }
+
+  .secondContainer {
+    gap: 40px;
+    padding: 20px 24px 40px;
+  }
+
+  .logoImg {
+    height: 200px;
+    width: 200px;
+  }
+
+  .textArea h1 {
+    font-size: 28px;
+  }
+
+  .thirdSec {
+    padding: 28px;
+  }
+}

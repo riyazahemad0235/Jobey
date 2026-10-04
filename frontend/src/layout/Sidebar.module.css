@@ -1,0 +1,101 @@
+.mainContainer {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.sideBar {
+  width: 250px;
+  height: 100vh;
+  flex-shrink: 0;
+  background-color: #efeb10;
+  color: black;
+  border-right: 1px solid #f1f3f6;
+}
+
+.firstContainer {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 20px;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.webIcon {
+  display: flex;
+  gap: 5px;
+}
+
+.firstContainer span {
+  font-size: 40px;
+}
+
+.secondContainer {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 30px;
+  gap: 10px;
+}
+
+.navItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 20px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navItem span {
+  padding-right: 10px;
+  font-size: 40px;
+}
+
+.navItem:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+
+.active {
+  background-color: rgba(0, 0, 0, 0.12);
+  border-left: 5px solid black;
+  padding-left: 15px;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+}
+
+.linkTitle {
+  color: black;
+  text-decoration: none;
+}
+
+.toast {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2000;
+  max-width: 360px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+.toastError {
+  background-color: #b3261e;
+}
