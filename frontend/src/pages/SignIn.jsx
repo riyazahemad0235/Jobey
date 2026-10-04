@@ -53,7 +53,7 @@ function SignIn() {
       </div>
       <div className={styles.secondContainer}>
         <div className={styles.secondSec}>
-          <img src="jobeyLogo.png" alt="" className={styles.logoImg} />
+          <img src="logo-image.png" alt="" className={styles.logoImg} />
           <div className={styles.textArea}>
             <h1>Manage your career </h1>
             <h1>journey</h1>
@@ -103,9 +103,7 @@ function SignIn() {
                 />
               </div>
             </div>
-            {error && (
-              <p style={{ color: "red", marginTop: "10px" }}>{error}</p>
-            )}
+            {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
             <div className={styles.signBtn}>
               <button type="submit" disabled={submitting}>
                 {submitting ? "Creating account..." : "Register"}

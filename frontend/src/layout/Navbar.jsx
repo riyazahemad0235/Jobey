@@ -10,6 +10,7 @@ function Navbar() {
 
   const { logout } = useContext(JobContext);
 
+  // Runs on button click AND when pressing Enter
   const handleSearch = (e) => {
     e.preventDefault();
     const term = inputValue.trim();
@@ -22,7 +23,7 @@ function Navbar() {
   };
 
   const handleLogout = async () => {
-    await logout();
+    await logout(); // clears the cookie and all of this user's data
     navigate("/", { replace: true });
   };
 

@@ -7,8 +7,10 @@ function JobProvider({ children }) {
   const [userData, setUserData] = useState(null);
   const [authLoading, setAuthLoading] = useState(true);
 
+  // Shared catalog of jobs (same for everyone)
   const [jobQuery, setJobQuery] = useState([]);
 
+  // Per-user data (each logged-in user only ever receives their own)
   const [applications, setApplications] = useState([]);
   const [savedJobs, setSavedJobs] = useState([]);
   const [archivedJobs, setArchivedJobs] = useState([]);
@@ -26,6 +28,7 @@ function JobProvider({ children }) {
     return () => clearTimeout(timer);
   }, [notice]);
 
+  // ---------- auth ----------
   const getCurrentUser = useCallback(async () => {
     try {
       setUserData(await api("/users/me"));
@@ -57,10 +60,11 @@ function JobProvider({ children }) {
     } catch (err) {
       console.error("Logout error:", err);
     } finally {
-      setUserData(null);
+      setUserData(null); // the effect below wipes all per-user data
     }
   };
 
+  // ---------- load everything for the logged-in user ----------
   useEffect(() => {
     if (!userData?._id) {
       setJobQuery([]);
@@ -99,6 +103,8 @@ function JobProvider({ children }) {
     };
   }, [userData?._id, notify]);
 
+  // ---------- actions ----------
+  // Runs an API call, shows a toast, and returns true/false.
   const run = async (fn, successMessage) => {
     try {
       await fn();
